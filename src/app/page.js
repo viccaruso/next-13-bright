@@ -1,5 +1,5 @@
 import React from 'react';
-import Snippet from '../components/Snippet/Snippet';
+import Revealable from '../components/Snippet/Revealable';
 import { Code } from 'bright';
 
 function Home() {
@@ -14,11 +14,11 @@ function Home() {
         assign.
       </p>
 
-      <Snippet>
+      <Revealable>
         <Code className="code-snippet" theme="dracula" lang="py">
           {FIRST_SNIPPET}
         </Code>
-      </Snippet>
+      </Revealable>
 
       <h2>Control Flow: Conditionals and Loops</h2>
       <p>
@@ -26,11 +26,11 @@ function Home() {
         while loops.
       </p>
 
-      <Snippet>
+      <Revealable>
         <Code className="code-snippet" theme="dracula" lang="py">
           {SECOND_SNIPPET}
         </Code>
-      </Snippet>
+      </Revealable>
 
       <h2>Functions and Basic Data Structures</h2>
 
@@ -39,11 +39,11 @@ function Home() {
         Python also has built-in data structures like lists and dictionaries.
       </p>
 
-      <Snippet>
+      <Revealable>
         <Code className="code-snippet" theme="dracula" lang="py">
           {THIRD_SNIPPET}
         </Code>
-      </Snippet>
+      </Revealable>
     </main>
   );
 }
